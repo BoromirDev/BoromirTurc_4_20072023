@@ -1,8 +1,21 @@
+// body {
+//   background-color: rgb(160, 110, 110);
+//   h1 {
+//     color: $primaryColor;
+//   }
+//   h2 {
+//     color: rebeccapurple;
+//   }
+//   margin: 0;
+// }
 
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  // color: $noir;
+}
 
-body{
-    background-color: rgb(160, 110, 110);
-    h1{
-        color: green;
-    }
+ul {
+  padding: 0;
+  margin: 0;
 }

@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div>
       <header>
-        <h1>ohmyfood</h1>
+        <img
+          class="img_logo"
+          src="images\logo\ohmyfood.png"
+          alt="logo de la societe ohmyfood"
+        />
       </header>
 
       <main>
-        <div>
-          <p>Paris, Belleville</p>
-          <!-- Faire un champs de formulaire pour pouvopir changer le text comme booki -->
+        <div class="btn">
+          <div class="btn_icone"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="btn_text">
+            <input class="btn_input" type="text" value="Paris, Belleville" />
+          </div>
         </div>
 
-        <section>
-          <h2>Réservez le menu qui vous convient</h2>
+        <section class="nom_a_venir">
+          <h1>Réservez le menu qui vous convient</h1>
 
           <p>
             Découvrez des restaurants d'exception, sélectionnés par nos soins
           </p>
-          <div>
+          <div class="nom_a_venir_2">
             <a href="Explorer nos restaurants">Explorer nos restaurants</a>
           </div>
         </section>
@@ -45,43 +57,55 @@
           </div>
         </section>
 
-        <section>
+        <section class="section_restaurant">
           <h2>Restaurants</h2>
 
-          <article>
+          <article class="card_article_restaurant">
             <img
+              class="img_card_top"
               src="images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg"
               alt="repas de restaurant"
             />
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
+            <div class="img_card_bot">
+              <h3 class="card_name">La palette du goût</h3>
+              <p class="card_name_address">Ménilmontant</p>
+            </div>
           </article>
 
-          <article>
+          <article class="card_article_restaurant">
             <img
+              class="img_card_top"
               src="images\restaurants\stil-u2Lp8tXIcjw-unsplash.jpg"
               alt="repas de restaurant"
             />
-            <h3>La note enchantée</h3>
-            <p>Charonne</p>
+            <div class="img_card_bot">
+              <h3 class="card_name">La note enchantée</h3>
+              <p class="card_name_address">Charonne</p>
+            </div>
           </article>
 
-          <article>
+          <article class="card_article_restaurant">
             <img
+              class="img_card_top"
               src="images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
               alt="repas de restaurant"
             />
-            <h3>À la française</h3>
-            <p>Cité rouge</p>
+            <div class="img_card_bot">
+              <h3 class="card_name">À la française</h3>
+              <p class="card_name_address">Cité rouge</p>
+            </div>
           </article>
 
-          <article>
+          <article class="card_article_restaurant">
             <img
+              class="img_card_top"
               src="images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
               alt="repas de restaurant"
             />
-            <h3>Le délice des sens</h3>
-            <p>Folie-Méricourt</p>
+            <div class="img_card_bot">
+              <h3 class="card_name">Le délice des sens</h3>
+              <p class="card_name_address">Folie-Méricourt</p>
+            </div>
           </article>
         </section>
       </main>
@@ -90,22 +114,10 @@
         <h3>ohmyfood</h3>
         <ul>
           <li><a href="Proposer un restaurant">Proposer un restaurant</a></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><a href="Devenir partenaire"> Devenir partenaire </a></li>
+          <li><a href="Mentions légales"> Mentions légales </a></li>
+          <li><a href="Contact"> Contact </a></li>
         </ul>
-        <!-- <p>
-          <a href="Proposer un restaurant"> Proposer un restaurant </a>
-        </p>
-        <p>
-          <a href="Devenir partenaire"> Devenir partenaire </a>
-        </p>
-        <p>
-          <a href="Mentions légales"> Mentions légales </a>
-        </p>
-        <p>
-          <a href="Contact"> Contact </a>
-        </p> -->
       </footer>
     </div>
   </body>
