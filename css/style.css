@@ -1,12 +1,25 @@
+header {
+  text-align: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  z-index: 1;
+  position: relative;
+}
+
 .img_logo {
   width: 197px;
   height: 36px;
   margin-top: 14px;
-  margin-left: 89px;
+  margin-bottom: 14px;
 }
 
 footer {
-  background-color: red;
+  background-color: #353535;
+  padding: 14px 14px;
+}
+
+.title_h3 {
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 body {
@@ -17,6 +30,57 @@ body {
 ul {
   padding: 0;
   margin: 0;
+}
+
+.btn {
+  background-color: #eaeaea;
+  padding: 17px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_input {
+  border: none;
+  background-color: #eaeaea;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nom_a_venir {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 1px;
+  padding-bottom: 50px;
+}
+
+.btn_purple {
+  background: linear-gradient(#9356dc, #ff79da);
+  padding: 15px;
+  margin: 0px 82px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.btn_purple_href {
+  text-decoration: none;
+  color: white;
+}
+
+.h1_first_page {
+  margin: 20px 50px;
+}
+
+.p_page_1 {
+  margin: 20px 45px;
+}
+
+.h2_first_page {
+  padding-left: 20px;
+  padding-top: 45px;
+  margin-bottom: 0px;
 }
 
 .section_restaurant {
@@ -30,9 +94,17 @@ ul {
 }
 .section_restaurant .img_card_bot {
   background-color: white;
-  height: 79px;
+  height: 68px;
   margin-top: -22px;
   border-radius: 0px 0px 15px 15px;
+}
+.section_restaurant .card_name {
+  padding-top: 13px;
+  margin-left: 13px;
+}
+.section_restaurant .card_name_address {
+  margin: -20px;
+  margin-left: 13px;
 }
 .section_restaurant .card_article_restaurant {
   padding: 18px;
