@@ -1,86 +1,179 @@
 // Location
 
-.btn {
+.btn-index {
   background-color: #eaeaea;
   padding: 17px;
   display: flex;
   justify-content: center;
+  color: #353535;
 }
 
-.btn_input {
+.btn-input-index {
   border: none;
   background-color: #eaeaea;
   text-align: center;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
+  width: 150px;
+  color: #353535;
 }
 
-.nom_a_venir {
+.Explorer_nos_restaurants {
   text-align: center;
   background-color: #f6f6f6;
-  padding-top: 1px;
+  padding-top: 10px;
   padding-bottom: 50px;
 }
 
 .btn_purple {
-  background: linear-gradient(#9356dc, #ff79da);
-  padding: 15px;
-  margin: 0px 82px;
+  margin: 0px 83px;
+  padding-top: 24px;
+}
+
+.btn-purple-index {
+  background: linear-gradient(#ff79da, #9356dc);
   border-radius: 25px;
+  padding: 14px 17px;
   color: white;
   text-decoration: none;
   box-shadow: 0px 4px 10px 0px #00000040;
 }
 
-.btn_purple_href {
-  text-decoration: none;
-  color: white;
+.btn-purple-index:hover {
+  background: linear-gradient(lighten(#ff79da, 5%), lighten(#9356dc, 5%));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-.h1_first_page {
+.h1-index {
   margin: 20px 50px;
 }
 
-.p_page_1 {
+.p-index {
   margin: 20px 45px;
 }
 
-.h2_first_page {
+.h2-index {
   padding-left: 20px;
-  padding-top: 45px;
-  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 // Les Fonctionemments
 
+.Fonctionnement {
+  padding-bottom: 20px;
+}
+
+.card_fonctionnement {
+  background: #f6f6f6;
+  margin: 23px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  font-weight: 600;
+}
+
+.icone_focntionnement {
+  margin: 0 30px;
+  color: #7e7e7e;
+}
+
+.icone_focntionnement:hover {
+  color: #9356dc;
+}
+
+.btn_fonctionnement {
+  position: absolute;
+  background: #9356dc;
+  padding: 5px;
+  border-radius: 50px;
+  left: -11px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
 // Les Restaurant
 .section_restaurant {
   background-color: #f6f6f6;
+  padding-bottom: 50px;
   .img_card_top {
     width: 100%;
-    height: 231px;
+    height: 179px;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
   }
 
+  .badge {
+    position: absolute;
+    font-size: 14px;
+    right: 30px;
+    margin-top: 10px;
+    padding: 6px 11px;
+    background-color: #99e2d0;
+    color: #008766;
+    box-shadow: 0px 2px 4px 0px #00000026;
+  }
+
+  .href-index {
+    text-decoration: none;
+    color: black;
+  }
+
+  .icone-heart-empty {
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    font-size: 23px;
+  }
+
+  .icone-heart-full {
+    opacity: 0;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    font-size: 23px;
+    transition-property: all;
+    transition-duration: 600ms;
+    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .icone-heart-full:hover {
+    opacity: 1;
+  }
+
   .img_card_bot {
-    background-color: white;
-    height: 68px;
-    margin-top: -22px;
-    border-radius: 0px 0px 15px 15px;
+    height: 65px;
+    position: relative;
+    padding-left: 13px;
   }
 
   .card_name {
-    padding-top: 13px;
-    margin-left: 13px;
+    margin: 0;
+    padding-top: 8px;
   }
 
   .card_name_address {
-    margin: -20px;
-    margin-left: 13px;
+    margin: 0;
+    margin-top: 2px;
   }
 
   .card_article_restaurant {
-    padding: 18px;
+    position: relative;
+    margin: 18px;
+    background-color: white;
+    border-radius: 15px;
   }
 }

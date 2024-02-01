@@ -1,21 +1,59 @@
-// body {
-//   background-color: rgb(160, 110, 110);
-//   h1 {
-//     color: $primaryColor;
-//   }
-//   h2 {
-//     color: rebeccapurple;
-//   }
-//   margin: 0;
-// }
-
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
-  // color: $noir;
 }
 
 ul {
   padding: 0;
   margin: 0;
+  list-style-type: none;
+}
+
+.background-loader {
+  position: fixed;
+  background: #f6f6f6;
+  opacity: 0.9;
+  width: 100vw;
+  height: 100vh;
+  inset: 0px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  animation: loaderanimation 3s forwards;
+}
+
+.loader {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border: 10px solid #353535;
+  border-bottom-color: #9356dc;
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loaderanimation {
+  0% {
+    visibility: visible;
+  }
+
+  99% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: hidden;
+  }
 }

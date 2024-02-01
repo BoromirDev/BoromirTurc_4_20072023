@@ -3,11 +3,21 @@ header {
   box-shadow: 0px 2px 4px 0px #00000026;
   z-index: 1;
   position: relative;
-}
+  a {
+    color: black;
+  }
 
-.img_logo {
-  width: 197px;
-  height: 36px;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  .img_logo {
+    width: 197px;
+    height: 36px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  .icone_goback_page_2 {
+    position: absolute;
+    left: 30px;
+    top: 19px;
+    font-size: x-large;
+  }
 }

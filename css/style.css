@@ -4,22 +4,57 @@ header {
   z-index: 1;
   position: relative;
 }
-
-.img_logo {
+header a {
+  color: black;
+}
+header .img_logo {
   width: 197px;
   height: 36px;
   margin-top: 14px;
   margin-bottom: 14px;
 }
+header .icone_goback_page_2 {
+  position: absolute;
+  left: 30px;
+  top: 19px;
+  font-size: x-large;
+}
 
 footer {
   background-color: #353535;
-  padding: 14px 14px;
+  padding: 16px 22px;
+}
+
+.img_logo_bottom {
+  width: 100px;
+  height: 17px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  filter: invert(1);
+  color: white;
 }
 
 .title_h3 {
   margin-bottom: 10px;
   margin-top: 0px;
+  font-family: Shrikhand;
+  font-size: 21px;
+  font-style: italic;
+  color: white;
+}
+
+.link_footer {
+  text-decoration: none;
+  color: white;
+}
+
+.icone_rest {
+  padding-right: 10px;
+  color: white;
+}
+
+.icone_hand_shake {
+  color: white;
 }
 
 body {
@@ -30,84 +65,380 @@ body {
 ul {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
-.btn {
+.background-loader {
+  position: fixed;
+  background: #f6f6f6;
+  opacity: 0.9;
+  width: 100vw;
+  height: 100vh;
+  inset: 0px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  animation: loaderanimation 3s forwards;
+}
+
+.loader {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border: 10px solid #353535;
+  border-bottom-color: #9356dc;
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loaderanimation {
+  0% {
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.btn-index {
   background-color: #eaeaea;
   padding: 17px;
   display: flex;
   justify-content: center;
+  color: #353535;
 }
 
-.btn_input {
+.btn-input-index {
   border: none;
   background-color: #eaeaea;
   text-align: center;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
+  width: 150px;
+  color: #353535;
 }
 
-.nom_a_venir {
+.Explorer_nos_restaurants {
   text-align: center;
   background-color: #f6f6f6;
-  padding-top: 1px;
+  padding-top: 10px;
   padding-bottom: 50px;
 }
 
 .btn_purple {
-  background: linear-gradient(#9356dc, #ff79da);
-  padding: 15px;
-  margin: 0px 82px;
+  margin: 0px 83px;
+  padding-top: 24px;
+}
+
+.btn-purple-index {
+  background: linear-gradient(#ff79da, #9356dc);
   border-radius: 25px;
+  padding: 14px 17px;
   color: white;
   text-decoration: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
-.btn_purple_href {
-  text-decoration: none;
-  color: white;
+.btn-purple-index:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-.h1_first_page {
+.h1-index {
   margin: 20px 50px;
 }
 
-.p_page_1 {
+.p-index {
   margin: 20px 45px;
 }
 
-.h2_first_page {
+.h2-index {
   padding-left: 20px;
-  padding-top: 45px;
-  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.Fonctionnement {
+  padding-bottom: 20px;
+}
+
+.card_fonctionnement {
+  background: #f6f6f6;
+  margin: 23px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  font-weight: 600;
+}
+
+.icone_focntionnement {
+  margin: 0 30px;
+  color: #7e7e7e;
+}
+
+.icone_focntionnement:hover {
+  color: #9356dc;
+}
+
+.btn_fonctionnement {
+  position: absolute;
+  background: #9356dc;
+  padding: 5px;
+  border-radius: 50px;
+  left: -11px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
 }
 
 .section_restaurant {
   background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 .section_restaurant .img_card_top {
   width: 100%;
-  height: 231px;
+  height: 179px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
+.section_restaurant .badge {
+  position: absolute;
+  font-size: 14px;
+  right: 30px;
+  margin-top: 10px;
+  padding: 6px 11px;
+  background-color: #99e2d0;
+  color: #008766;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.section_restaurant .href-index {
+  text-decoration: none;
+  color: black;
+}
+.section_restaurant .icone-heart-empty {
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  font-size: 23px;
+}
+.section_restaurant .icone-heart-full {
+  opacity: 0;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  font-size: 23px;
+  transition-property: all;
+  transition-duration: 600ms;
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section_restaurant .icone-heart-full:hover {
+  opacity: 1;
+}
 .section_restaurant .img_card_bot {
-  background-color: white;
-  height: 68px;
-  margin-top: -22px;
-  border-radius: 0px 0px 15px 15px;
+  height: 65px;
+  position: relative;
+  padding-left: 13px;
 }
 .section_restaurant .card_name {
-  padding-top: 13px;
-  margin-left: 13px;
+  margin: 0;
+  padding-top: 8px;
 }
 .section_restaurant .card_name_address {
-  margin: -20px;
-  margin-left: 13px;
+  margin: 0;
+  margin-top: 2px;
 }
 .section_restaurant .card_article_restaurant {
-  padding: 18px;
+  position: relative;
+  margin: 18px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.main_menu {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  margin-top: -55px;
+  padding-bottom: 50px;
+}
+
+.img-menu {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.icone_heart_page_2 {
+  position: absolute;
+  font-size: 23px;
+  right: 40px;
+  top: 50px;
+}
+
+.section-menu {
+  margin-bottom: 50px;
+}
+.section-menu .delay-1 {
+  animation-delay: 600ms;
+}
+.section-menu .delay-2 {
+  animation-delay: 1200ms;
+}
+.section-menu .delay-3 {
+  animation-delay: 1800ms;
+}
+
+.titre-principal-menu {
+  margin: 0px;
+  padding: 15px;
+  padding-top: 40px;
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.h2-menu {
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.h2-menu::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background-color: #99e2d0;
+  top: 23px;
+  left: 0px;
+}
+
+.card_article_plat {
+  position: relative;
+  display: flex;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  animation: appear 1s forwards;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.card_article_plat:hover .card-check-menu {
+  width: 15%;
+}
+
+.card-menu {
+  padding: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card_titre_menu {
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card_contenu_menu {
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-menu-prix {
+  margin-left: auto;
+}
+
+.card-check-menu {
+  display: flex;
+  justify-content: center;
+  width: 0%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99e2d0;
+  transition-property: all;
+  transition-duration: 600ms;
+}
+
+.icone-check-menu {
+  display: flex;
+  align-items: center;
+}
+
+.icone-check {
+  border-radius: 50%;
+  color: white;
+}
+
+.icone_money {
+  display: flex;
+  padding-top: 36px;
+  padding-right: 13px;
+}
+
+.btn-purple-menu {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#9356dc, #ff79da);
+  padding: 15px;
+  margin: 0px 90px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.btn-purple-menu:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
