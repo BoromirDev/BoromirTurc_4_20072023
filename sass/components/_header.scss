@@ -21,3 +21,14 @@ header {
     font-size: x-large;
   }
 }
+
+@media only screen and (min-width: 1025px) {
+  header {
+    box-shadow: 0px 0px 0px 0px #00000026;
+    padding: 15px;
+
+    .icone_goback_page_2 {
+      top: 34px;
+    }
+  }
+}

@@ -177,3 +177,41 @@
     border-radius: 15px;
   }
 }
+
+@media only screen and (min-width: 1025px) {
+  .h1-index {
+    font-size: 40px;
+  }
+
+  .h2-index {
+    padding-left: 0px;
+  }
+
+  .Fonctionnement {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .card_fonctionnement {
+    padding-right: 70px;
+  }
+
+  .section_restaurant {
+    padding-left: 140px;
+    padding-right: 140px;
+    .card_article_restaurant {
+      margin: 0px;
+    }
+  }
+
+  .img_card_bot {
+    height: 70px;
+  }
+
+  .container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 50px;
+  }
+}

@@ -57,3 +57,17 @@ ul {
     visibility: hidden;
   }
 }
+
+@media only screen and (min-width: 1025px) {
+  ul {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    margin: auto;
+    max-width: 1440px;
+  }
+}

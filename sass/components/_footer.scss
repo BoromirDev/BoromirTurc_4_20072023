@@ -34,3 +34,13 @@ footer {
 .icone_hand_shake {
   color: white;
 }
+
+@media only screen and (min-width: 1025px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 98px;
+    padding-right: 50px;
+    padding-top: 60px;
+  }
+}
